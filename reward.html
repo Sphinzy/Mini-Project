@@ -23,9 +23,416 @@
     <link rel="stylesheet" href="assets/bootstrap-5.3.7/css/bootstrap.css">
 
 </head>
-<body>
-    
+<style>
+    .start-75{
+        left: 75px;
+    }
 
+    .top-75{
+        bottom: -30px;
+    }
+
+    .end-75{
+        right: 75px;
+    }
+
+    .accordion-button {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .accordion-item {
+        border: none !important;
+        color: gray;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+</style>
+<body>
+    <header style="background-color: #9BBBFC;">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand fs-3" href="index.html"><i class="fa-solid fa-plane-departure text-light fs-1"></i>Tour Trip</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0 fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discover.html">Discover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reward.html">Reward</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        
+                        <button class="btn btn-outline-success my-2 my-sm-0 me-2" type="submit">
+                            Sign In
+                        </button>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Sign Up
+                        </button>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="mt-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card py-5 position-relative border-0 shadow-lg">
+                            <div class="d-none d-md-block">
+                                <img src="https://www.svgrepo.com/show/499830/reward.svg" class="img-fluid position-absolute w-25 h-25 top-75 start-50" alt="">
+                                <img src="https://www.svgrepo.com/show/288831/reward-best.svg" class="img-fluid position-absolute w-25 h-25 start-0 top-0 translate-middle" alt="">
+                                <!-- <img src="https://www.svgrepo.com/show/288789/flower.svg" class="img-fluid position-absolute w-25 h-25 end-0 " alt=""> -->
+                                <img src="https://www.svgrepo.com/show/503829/carefully-tilt.svg" class="img-fluid position-absolute w-25 h-25 bottom-0 start-75" alt="">
+                                <img src="https://www.svgrepo.com/show/427656/bet-casino-coin.svg" class="img-fluid position-absolute w-25 h-25 " alt="">
+                                <img src="https://www.svgrepo.com/show/206851/medal-reward.svg" class="img-fluid position-absolute w-25 h-25 start-100 top-100 translate-middle" alt="">
+                                <img src="https://www.svgrepo.com/show/276289/award-reward.svg" class="img-fluid position-absolute w-25 h-25 start-0 top-100 translate-middle" alt="">
+                                <img src="https://www.svgrepo.com/show/206851/medal-reward.svg" class="img-fluid position-absolute w-25 h-25 start-100 top-100 translate-middle" alt="">
+                                <img src="https://www.svgrepo.com/show/503841/gift.svg" class="img-fluid position-absolute w-25 h-25 start-100 top-0 translate-middle" alt="">
+                                <img src="https://www.svgrepo.com/show/288789/flower.svg" class="img-fluid position-absolute w-25 h-25 end-75 top-50" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title text-center">
+                                    <i class="fa-solid fa-award fa-beat"></i> Rewards
+                                </h2>
+                                <h1 class="card-title text-center fw-bold fs-lg-1 fs-2">Plan.Book.Share. Earn Reward.</h1>
+                                <p class="card-text text-center px-lg-22 px-md-5">
+                                    Welcome to the membership program that rewards you for planning, sharing, and booking. Best of all—it’s free to join.
+                                </p>
+                                <p class="card-text text-center px-lg-22 px-md-5">Your first reward's on us: Join today and get $30 off Things to Do.</p>
+
+                                <button type="button" class="btn btn-dark rounded-pill px-4 py-2 mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Join In Our Team Now
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Welcome !!</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="https://img.freepik.com/premium-vector/vector-qr-code-example-smartphone-scan_535345-3786.jpg?semt=ais_hybrid&w=740&q=80" class="img-fluid" alt="">
+                                            <h3 class="fw-bold">Scan Now To Contact Our Team</h3>
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-18">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card border-0 p-4">
+                            <div class="fs-2 m-auto">
+                                <i class="fa-solid fa-coins"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title fw-bold">
+                                    5% back in Trip Cash
+                                </h4>
+                                <p class="card-text">
+                                    On stays and experiences in the app
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card border-0  p-4">
+                            <div class="fs-2 m-auto">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title fw-bold">
+                                    Earn bonus Trip Cash
+                                </h4>
+                                <p class="card-text">
+                                    Plan and share for bonus Trip Cash
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card border-0  p-4">
+                            <div class="fs-2 m-auto">
+                                <i class="fa-solid fa-film fa-rotate-90 "></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title fw-bold">
+                                    Price match guarantee**
+                                </h4>
+                                <p class="card-text">
+                                    Only when booking in the app
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card border-0 ">
+                            <img src="https://www.svgrepo.com/show/196652/discount-percent.svg" class="img-fluid w-25 h-25 m-auto" alt="">
+                            <div class="card-body text-center">
+                                <h1 class="card-title text-center fw-bold fs-lg-1 fs-2">
+                                    Get $70 off Things to Do*
+                                </h1>
+                                <p class="card-text text-center px-lg-22 px-md-5">
+                                    Discover over 400k tours and experiences. Join in the app and verify your U.S. phone number now.
+                                </p>
+                                <button type="button" class="btn btn-dark rounded-pill px-4 py-2 mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Claim Now
+                                </button>
+
+                                <div class="modal fade" id="staticBackdropsecond" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabelsecond">Welcome !!</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="https://img.freepik.com/premium-vector/vector-qr-code-example-smartphone-scan_535345-3786.jpg?semt=ais_hybrid&w=740&q=80" class="img-fluid" alt="">
+                                            <h3 class="fw-bold">Scan Now To Contact Our Team</h3>
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-18">
+            <div class="container bg-light pb-15">
+                <h1 class="text-center fw-bold pt-11 pb-5">
+                    Start earning rewards
+                </h1>
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card border-0 p-4 bg-light">
+                            <img src="https://www.svgrepo.com/show/485824/number10.svg" class="img-fluid w-25 h-25 m-auto" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="card-title fw-bold">
+                                    Create an account
+                                </h4>
+                                <p class="card-text">
+                                <code class="fw-bold">Sign up</code> to join the world's largest travel community. Get full access to all your benefits in the app.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card border-0 p-4 bg-light">
+                            <img src="https://www.svgrepo.com/show/485823/number11.svg" class="img-fluid w-25 h-25 m-auto" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="card-title fw-bold">
+                                    Earn rewards for doing what you love
+                                </h4>
+                                <p class="card-text">
+                                    Get Trip Cash when you plan trips, book hotels or experiences, contribute to the community, and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card border-0  p-4 bg-light">
+                            <img src="https://www.svgrepo.com/show/485827/number12.svg" class="img-fluid w-25 h-25 m-auto" alt="">
+                            <div class="card-body text-center">
+                                <h4 class="card-title fw-bold">
+                                    Redeem on hotels and experiences
+                                </h4>
+                                <p class="card-text">
+                                    Treat yourself immediately or save up for that big splurge—it's up to you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="" class="btn btn-dark rounded-pill px-4 py-2 mt-3"> Join In Our Team Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-18">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-lg-6">
+                        <img src="https://static.tacdn.com/img2/rewards/rewards_lander_perks_pic.svg" class="card-img" alt="">
+                    </div>
+
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="card border-0 ">
+                            <div class="card-body">
+                                <h1 class="card-title fw-bold">
+                                    The perks are packed
+                                </h1>
+                                <p class="card-text">Tripadvisor Rewards helps you plan and book with confidence.</p>
+                                
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pe-3 fs-3"></i>
+                                    <h5 class="card-title">
+                                        Being a member is always free
+                                    </h5>
+                                </div>
+                                <p class="card-text ps-5"> No points. No tiers. No hidden fees. Just great benefits.</p>
+                                
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pe-3 fs-3"></i>
+                                    <h5 class="card-title">
+                                        Price match guarantee**
+                                    </h5>
+                                </div>
+                                <p class="card-text ps-5"> Found a better deal? We'll match it.</p>
+                                
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pe-3 fs-3"></i>
+                                    <h5 class="card-title">
+                                        Flexible booking options
+                                    </h5>
+                                </div>
+                                <p class="card-text ps-5">Enjoy free cancellation, paid extras like Cancel for Any Reason, and more ways to enhance your trip.</p>
+
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pe-3 fs-3"></i>
+                                    <h5 class="card-title">
+                                        Trip planning tools
+                                    </h5>
+                                </div>
+                                <p class="card-text ps-5"> Get recs, plan by yourself or with AI, book trips, and stay organized.</p>
+
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pe-3 fs-3"></i>
+                                    <h5 class="card-title">
+                                        Share, review, contribute
+                                    </h5>
+                                </div>
+                                <p class="card-text ps-5"> Guide others with photos and reviews, or ask forums for travel help.</p>
+
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pe-3 fs-3"></i>
+                                    <h5 class="card-title">
+                                        Personal Achievements
+                                    </h5>
+                                </div>
+                                <p class="card-text ps-5"> Earn badges (and bragging rights) when you use Tripadvisor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 mt-md-18">
+            <div class="container bg-light py-10">
+                <h1 class="fw-bold text-center fs-3 fs-md-1 mb-4">Earn rewards—only with membership</h1>
+                <p class="text-center">Don’t leave perks on the table. Get the app stat and rack up savings.</p>
+                <div class="text-center mt-5">
+                    <a href="" class="btn btn-dark rounded-pill px-4 py-2 mt-3"> Start earning rewards</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-18">
+            <div class="container">
+                <h1 class="fw-bold text-center">FAQ</h1>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What if I don’t want to download the app? Can I still participate?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">You can still enjoy some member perks on desktop or mobile web, but the bulk of the new rewards are only available in the Tripadvisor app. You can continue to save inspo, build trips, compare hotel prices, give and get traveler guidance, book things to do as a logged-in member on Tripadvisor.com, but to earn and redeem rewards like Trip Cash and get access to other member-only offers and discounts, you will need to use the app.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            What can I redeem Trip Cash on, and how do I use it?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Trip Cash can be redeemed when booking any hotel or things to do in the Tripadvisor app. You can choose how much to use at checkout, and Trip Cash is valued 1:1 Trip Cash to dollars when redeeming on a purchase.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How can I earn bonus Trip Cash?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                We think every step of your trip deserves to be celebrated, from planning and booking to sharing and contributing to the community. That’s why, in addition to earning Trip Cash on every hotel and things to do booked in the app, you’ll also earn bonus Trip Cash beyond booking. Being active on Tripadvisor has a chance to net you extra Trip Cash, think: planning a trip, saving inspo, contributing to the community, and so much more. We’ll also have special challenges that will ask you to do certain actions for bonus Trip Cash. Keep an eye on your inbox and wallet for announcements.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Does Trip Cash expire?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Your Trip Cash expires a year after it’s been earned. You can find the expiration date in your wallet, with your Trip Cash balance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Can I combine offers and Trip Cash?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Yes, you can apply one available offer in addition to your Trip Cash at checkout. This allows you to stack your discounts for even better deals. However, unlike Trip Cash, offers can have additional restrictions and may only be redeemable on specific bookings.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="assets/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
