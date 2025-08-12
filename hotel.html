@@ -21,6 +21,7 @@
 
     <!-- boostrap  -->
     <link rel="stylesheet" href="assets/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- swipper  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -28,34 +29,288 @@
 </head>
 
 <body style="background-color:   #d9eff7;">
+    <header style="background-color: #9BBBFC;">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand fs-3" href="index.html"><i
+                        class="fa-solid fa-plane-departure text-light fs-1"></i>Tour Trip</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0 fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discover.html">Discover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reward.html">Reward</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+
+                        <button class="btn btn-outline-success my-2 my-sm-0 me-2" type="submit">
+                            Sign In
+                        </button>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Sign Up
+                        </button>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
 
     <main>
-        <section>
+        <section class="my-10">
             <div class="container">
-                <div class="swiper mySwiper w-100">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img
-                                src="https://i.pinimg.com/1200x/be/a2/1b/bea21b4ccc54d80679542e44ce849f57.jpg"
-                                class="img-fluid object-fit-cover w-100 rounded-4" style="width: 100%; height: 500px;"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="https://i.pinimg.com/1200x/2f/ff/33/2fff33ebc92b6c997d3b1cb1e83ae8d7.jpg"
-                                class="img-fluid object-fit-cover w-100 rounded-4" style="width: 100%; height: 500px;"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="https://i.pinimg.com/736x/9d/6b/af/9d6baf6d9fbc4aa810f9f78b8f42616a.jpg"
-                                class="img-fluid object-fit-cover w-100 rounded-4" style="width: 100%; height: 500px;"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="https://i.pinimg.com/1200x/5f/8a/3e/5f8a3ea5951a33201da5a51bb0744b5b.jpg"
-                                class="img-fluid object-fit-cover w-100 rounded-4" style="width: 100%; height: 500px;"
-                                alt=""></div>
+                <div class="hero-banner position-relative d-flex justify-content-center align-items-center">
+                    <div class="overlay bg-black opacity-25 position-absolute w-100 h-100 rounded-4 z-2"></div>
+                    <h1 class="banner-title position-absolute z-3 text-white display-1 fw-bold">Find hotels travelers
+                        love</h1>
+                    <div class="swiper mySwiper autoSwiper">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide rounded-4 overflow-hidden"><img
+                                    src="https://i.pinimg.com/1200x/5f/8a/3e/5f8a3ea5951a33201da5a51bb0744b5b.jpg"
+                                    class="img-fluid object-fit-cover w-100 rounded-4 "
+                                    style="width: 100%; height: 500px;" alt=""></div>
 
+                            <div class="swiper-slide rounded-4 overflow-hidden"><img
+                                    src="https://i.pinimg.com/1200x/2f/ff/33/2fff33ebc92b6c997d3b1cb1e83ae8d7.jpg"
+                                    class="img-fluid object-fit-cover w-100 rounded-4"
+                                    style="width: 100%; height: 500px;" alt=""></div>
+
+                            <div class="swiper-slide rounded-4 overflow-hidden"><img
+                                    src="https://i.pinimg.com/1200x/4e/b6/7e/4eb67ee605a37a8447e71e4d3c1ffede.jpg"
+                                    class="img-fluid object-fit-cover w-100 rounded-4"
+                                    style="width: 100%; height: 500px;" alt=""></div>
+
+                            <div class="swiper-slide rounded-4 overflow-hidden"><img
+                                    src="https://i.pinimg.com/1200x/02/14/88/021488f6cade8c01b0f26752e7b69175.jpg"
+                                    class="img-fluid object-fit-cover w-100 rounded-4"
+                                    style="width: 100%; height: 500px;" alt=""></div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="row pt-10">
+                    <div class="col-lg-4">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <i class="bi bi-people-fill fs-2"></i>
+                                <h3 class="card-title">Backed by travelers</h3>
+                                <p class="card-text">Book confidently thanks to reviews from travelers who have been
+                                    there.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <i class="bi bi-house-lock-fill fs-2"></i>
+                                <h3 class="card-title">Stays for every style</h3>
+                                <p class="card-text">Choose from more than two million hotels with filters to find your
+                                    perfect fit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <i class="bi bi-cloud-arrow-down-fill fs-2"></i>
+                                <h3 class="card-title">Best rates around</h3>
+                                <p class="card-text">Compare prices from 200+ booking sites to book with the best deal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section>
+            <div class="hotel">
+                <div class="container">
+                    <h3 class="hotel-title fw-bold">Travelers’ Choice: Top hotels</h3>
+                    <p class="hotel-text">
+                        Among our top 1% of hotels - decided by travelers.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="detail.html" class="text-decoration-none">
+                                <div class="card border-0 shadow-lg position-relative">
+                                <i class="bi bi-heart position-absolute z-2 fs-3 px-2 bg-white rounded-circle"
+                                    style="left: 80%; top: 3%; "></i>
+                                <img src="https://i.pinimg.com/736x/76/93/0a/76930af78954186cbc9c278a54ae6a31.jpg"
+                                    class="card-img-top img-tag" alt="">
+                                <div class="card-body">
+                                    <h1 class="card-title fw-bold display-3">1</h1>
+                                    <div class="card-tag bg-success-subtle text-success-emphasis rounded-1 p-1"
+                                        style="width: fit-content; font-size: 12px;">Luxury</div>
+                                    <p class="card-text fw-bold fs-5">
+                                        Secrets Akumal Riviera Maya
+                                    </p>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                        <span class="text-warning">4.5</span>
+                                        <span>(12,304)</span>
+                                    </div>
+                                        <p class="card-price mt-3">from <span class="fw-bold fs-4">$442</span></p>                                    
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="detail.html" class="text-decoration-none">
+                                <div class="card border-0 shadow-lg position-relative">
+                                <i class="bi bi-heart position-absolute z-2 fs-3 px-2 bg-white rounded-circle"
+                                    style="left: 80%; top: 3%; "></i>
+                                <img src="https://i.pinimg.com/1200x/b2/27/06/b22706482c466f87b8dc44c1b47316fa.jpg"
+                                    class="card-img-top img-tag" alt="">
+                                <div class="card-body">
+                                    <h1 class="card-title fw-bold display-3">2</h1>
+                                    <div class="card-tag bg-success-subtle text-success-emphasis rounded-1 p-1"
+                                        style="width: fit-content; font-size: 12px;">Luxury</div>
+                                    <p class="card-text fw-bold fs-5">
+                                        Secrets Akumal Riviera Maya
+                                    </p>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                        <span class="text-warning">4.5</span>
+                                        <span>(12,304)</span>
+                                    </div>
+                                    <p class="card-price mt-4">from <span class="fw-bold fs-4">$442</span></p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="detail.html" class="text-decoration-none">
+                                <div class="card border-0 shadow-lg position-relative">
+                                <i class="bi bi-heart position-absolute z-2 fs-3 px-2 bg-white rounded-circle"
+                                    style="left: 80%; top: 3%; "></i>
+                                <img src="https://i.pinimg.com/1200x/04/e0/44/04e044230a467e9e2085f7af554d75c3.jpg"
+                                    class="card-img-top img-tag" alt="">
+                                <div class="card-body">
+                                    <h1 class="card-title fw-bold display-3">3</h1>
+                                    <div class="card-tag bg-success-subtle text-success-emphasis rounded-1 p-1"
+                                        style="width: fit-content; font-size: 12px;">Luxury</div>
+                                    <p class="card-text fw-bold fs-5">
+                                        Secrets Akumal Riviera Maya
+                                    </p>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                        <span class="text-warning">4.5</span>
+                                        <span>(12,304)</span>
+                                    </div>
+                                    <p class="card-price mt-4">from <span class="fw-bold fs-4">$442</span></p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="detail.html" class="text-decoration-none">
+                                <div class="card border-0 shadow-lg position-relative">
+                                <i class="bi bi-heart position-absolute z-2 fs-3 px-2 bg-white rounded-circle"
+                                    style="left: 80%; top: 3%; "></i>
+                                <img src="https://i.pinimg.com/1200x/f5/63/49/f56349f60c67a75594c934a0df815a54.jpg"
+                                    class="card-img-top img-tag" alt="">
+                                <div class="card-body">
+                                    <h1 class="card-title fw-bold display-3">4</h1>
+                                    <div class="card-tag bg-success-subtle text-success-emphasis rounded-1 p-1"
+                                        style="width: fit-content; font-size: 12px;">Luxury</div>
+                                    <p class="card-text fw-bold fs-5">
+                                        Secrets Akumal Riviera Maya
+                                    </p>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                        <span class="text-warning">4.5</span>
+                                        <span>(12,304)</span>
+                                    </div>
+                                    <p class="card-price mt-4">from <span class="fw-bold fs-4">$442</span></p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="resort py-10">
+                <div class="container">
+                    <h3 class="resort-title fw-bold">Travelers’ Choice: All-inclusive resorts</h3>
+                    <p class="resort-text">
+                        Among our top 1% of resort - decided by travelers.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card border-0 shadow-lg overflow-hidden">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://ikosresorts.com/wp-content/uploads/2022/09/Ikos-Dassia_Overview_2880x1619-1-1024x576.jpg" class="card-img-top object-fit-cover" style="width: 100%; height: 250px;" alt="">
+                                        </div>
+                                        <div class="swiper-slide"> 
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/19/e7/e8/ikos-dassia.jpg?w=300&h=-1&s=1" class="card-img-top object-fit-cover" style="width: 100%; height: 250px;" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/59/40/2a/ikos-dassia-beach.jpg?w=300&h=200&s=1" class="card-img-top object-fit-cover" style="width: 100%; height: 250px;" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/70/51/6b/photo8jpg.jpg?w=300&h=200&s=1" class="card-img-top object-fit-cover" style="width: 100%; height: 250px;" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Ikos Dassia
+                                    </h3>
+                                    <p class="card-title clamp-3">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque illum debitis accusantium ad deleniti, mollitia, fugit et ducimus itaque molestiae pariatur libero, quis aut esse adipisci nisi sunt quo!
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between ">
+                                        <span class="card-price">from <span class="fw-bold fs-4">$442</span></span>                                    
+                                        <a href="detail.html" class="btn btn-primary btn-sm fw-medium">Check in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
 
@@ -63,24 +318,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
