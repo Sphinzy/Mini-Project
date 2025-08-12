@@ -21,11 +21,178 @@
 
     <!-- boostrap  -->
     <link rel="stylesheet" href="assets/bootstrap-5.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
 </head>
-<body>
-    
 
+<body style="background-color:   #d9eff7;">
+
+    <header style="background-color: #7093d8;">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand fs-3" href="index.html"><i
+                        class="fa-solid fa-plane-departure text-light fs-1"></i>Tour
+                    Trip</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0 fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discover.html">Discover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reward.html">Reward</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+
+                        <a class="btn btn-outline-light my-2 my-sm-0 me-2" type="submit">
+                            Sign In
+                        </a>
+                        <a class="btn btn-dark my-2 my-sm-0" type="submit">
+                            Sign Up
+                        </a>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container pt-10">
+                <div class="hero-banner">
+                    <div class="title d-flex justify-content-between">
+                        <h1 class="banner-title fw-bold">Secrets Akumal Riviera Maya</h1>
+
+                        <div class="feature d-flex flex-row">
+                            <i class="bi bi-upload fs-4 me-3"></i>
+                            <button class="btn btn-outline-dark d-flex align-items-center justify-content-center fs-5 fw-medium border border-1 border-black rounded-pill"
+                                style="width: 90px; height: 40px;">
+                                <i class="bi bi-heart pe-2"></i>
+                                <span>Save</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 py-5">
+                        <div class="col-lg-10">
+                            <img src="https://i.pinimg.com/1200x/fb/97/e1/fb97e19bdc81df5246bad6e1091c3cd4.jpg"
+                                class="img-fluid w-100 object-fit-cover" style="height: 500px;" alt>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <img src="https://i.pinimg.com/736x/04/0e/99/040e99e1b339441e01061012b1c645d7.jpg"
+                                        class="img-fluid object-fit-cover" style="width: 100%; height: 150px;" alt>
+                                </div>
+                                <div class="col-lg-12">
+                                    <img src="https://i.pinimg.com/736x/11/42/24/11422497b0b44efa22b0277cbe703ab8.jpg"
+                                        class="img-fluid object-fit-cover" style="width: 100%; height: 150px;" alt>
+                                </div>
+                                <div class="col-lg-12">
+                                    <img src="https://i.pinimg.com/1200x/32/92/13/3292131858a0c7c876d16b969ea825ce.jpg"
+                                        class="img-fluid object-fit-cover" style="width: 100%; height: 150px;" alt>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pb-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    About
+                                </h3>
+                                <p class="card-text">
+                                    Nido, Mar-Bella Collection is a luxurious adults-only resort located on the
+                                    beautiful island of Corfu, Greece. Nestled along a
+                                    stunning stretch of coastline, the resort offers breathtaking sea views, elegant
+                                    suites with private pools or whirlpools, and a
+                                    serene atmosphere perfect for relaxation. Known for its exceptional service and
+                                    refined Greek hospitality, Nido combines modern
+                                    comforts with traditional charm. Guests can enjoy gourmet dining, an infinity pool
+                                    overlooking the Ionian Sea, a spa, and direct
+                                    access to the beach. Its tranquil setting and sophisticated design make it an ideal
+                                    destination for couples seeking a romantic getaway.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card ">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold py-2">
+                                    View prices for your travel dates
+                                </h5>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="form-control-label fw-medium ms-3">Check out</label>
+                                        <input type="date" class="form-control rounded-pill">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="form-control-label fw-medium ms-3">Check in</label>
+                                        <input type="date" class="form-control rounded-pill">
+                                    </div>
+                                    <div class="col-lg-12 py-3">
+                                        <label class="form-control-label fw-medium ms-3">Special Requests</label>
+                                        <textarea class="form-control rounded-pill px-3" rows="2"
+                                            placeholder="Any special requests?"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 py-5">
+                        <div class="card text-center shadow-lg border-0 py-3">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    Did you already book this hotel?
+                                </h3>
+                                <p class="card-text">
+                                    Tell us so we can help you plan.
+                                </p>
+                                <button type="button"
+                                    class="btn btn-outline-dark border border-2 border-black fw-medium rounded-pill px-3">Yes</button>
+                                <button type="button"
+                                    class="btn btn-outline-dark border border-2 border-black fw-medium rounded-pill px-3">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="assets/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
