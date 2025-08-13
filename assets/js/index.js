@@ -52,3 +52,7 @@ var swiper = new Swiper(".switchSwiper", {
         },
     },
 });
+AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true,     // Whether animation should happen only once
+});
