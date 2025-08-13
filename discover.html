@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discover</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/825/825448.png" type="image/x-icon">
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/theme.css">
@@ -15,24 +16,59 @@
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- boostrap  -->
     <link rel="stylesheet" href="assets/bootstrap-5.3.7/css/bootstrap.css">
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- link animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <style>
-    .hreo-img {
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .hero-section {
+        position: relative;
+        background: url(https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/473241563_1028733335730037_4882338862351926201_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ylbgHYY7Wt4Q7kNvwGOhVfg&_nc_oc=AdmJjzS4EJ3Rbr-1EEALDSoGnWVIfwTsmOxFS60jZVxzDVXyyq2QwZf4Pi3tIbANfY8&_nc_zt=23&_nc_ht=scontent.fpnh5-3.fna&_nc_gid=ymTMw0hi2l56FysyZUJsUQ&oh=00_AfUclZ8k0P5dsP8xXQW3bsxFU5Dv4WHRE6meTZEqHJElnA&oe=689F80E1) no-repeat center center;
         width: 100%;
         height: 100vh;
-        background-image: url(https://scontent.fpnh5-3.fna.fbcdn.net/v/t39.30808-6/473241563_1028733335730037_4882338862351926201_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ylbgHYY7Wt4Q7kNvwGOhVfg&_nc_oc=AdmJjzS4EJ3Rbr-1EEALDSoGnWVIfwTsmOxFS60jZVxzDVXyyq2QwZf4Pi3tIbANfY8&_nc_zt=23&_nc_ht=scontent.fpnh5-3.fna&_nc_gid=ymTMw0hi2l56FysyZUJsUQ&oh=00_AfUclZ8k0P5dsP8xXQW3bsxFU5Dv4WHRE6meTZEqHJElnA&oe=689F80E1);
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
-
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero-section .container {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+    .hero-section h1 {
+        font-size: 1.5em;
+        margin-top: 30vh;
+    }
+    .hero-section h2 {
+        font-size: 1.2em;
+    }
+    .banner{
+        width: 100%;
+        height: 500px;
+        margin: 100px 0px;
+        background-image: url(https://www.trustytuktuk.com/UploadFile/images/photos-trusty-tuk-tuk-siem-reap/ANGKORWAT-picture-trusty-tuk-tuk-siem-reap4.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
     img {
         width: 100%;
         height: 100%;
@@ -41,9 +77,9 @@
 </style>
 
 <body>
-    <header style="background-color: #9BBBFC;">
+    <header style="background-color: #7093d8;">
         <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-dark">
+            <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand fs-3" href="index.html"><i
                         class="fa-solid fa-plane-departure text-light fs-1"></i>Tour Trip</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -51,8 +87,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav m-auto mt-2 mt-lg-0 fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Home <span
-                                    class="visually-hidden">(current)</span></a>
+                            <a class="nav-link active" href="#" aria-current="page">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="discover.html">Discover</a>
@@ -60,40 +95,199 @@
                         <li class="nav-item">
                             <a class="nav-link" href="reward.html">Reward</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
                     </ul>
                     <form class="d-flex my-2 my-lg-0">
 
-                        <button class="btn btn-outline-success my-2 my-sm-0 me-2" type="submit">
+                        <a class="btn btn-outline-light my-2 my-sm-0 me-2" type="submit">
                             Sign In
-                        </button>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        </a>
+                        <a class="btn btn-dark my-2 my-sm-0" type="submit">
                             Sign Up
-                        </button>
+                        </a>
                     </form>
                 </div>
             </nav>
-
         </div>
     </header>
 
     <main>
-        <!-- <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="text-center">Welcome to Tour Trip</h1>
-                        <p class="text-center">Explore the world with us. Discover new places, cultures, and experiences.</p>
+        <section class="hero-section">
+            <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+                <h1 class="animate__animated animate__bounce">Discover Your Next Adventure</h1>
+                <h2 class="animate__animated animate__backInUp">Join us for unforgettable journeys and experiences.</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-4">
+                <h1>Travelers' Choice Awards Best of the Best 2025</h1>
+                <p>Every year, we award travelers' favorite destinations, hotels, restaurants, and things to do around the world, based on reviews and ratings collected over 12 months. So our Travelers' Choice Awards Best of the Best winners are decided by you: real travelers from all over, sharing real opinions and stories.
+                The 2025 winners are a celebration of everything we did last year—all the places we discovered and all the times we just said "yes" to new adventures. We'll reveal the winners by category throughout the year, so keep checking back for the latest.
+                To learn more about how winners are chosen, visit our awards policy page</p>
+                <div class="row g-4 g-mb-3">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1744924592736-84f64eb662b4?mark=https://images.unsplash.com/opengraph/logo.png&mark-w=64&mark-align=top,left&mark-pad=50&h=630&w=1200&crop=faces,edges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUyMjQzNDc3fA&ixlib=rb-4.1.0" alt="" style="height: 500px;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Imbu Rano Lodge: My Experience on Kolombangara Island</h5>
+                                <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                <a href="#" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card-img">
+                                <img src="https://dynamic-media.tacdn.com/media/photo-o/2f/ba/bc/d3/caption.jpg?w=700&h=500&s=1" alt="" style="height: 500px;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Koh Nang Yuan Viewpoint Hike: Complete Guide</h5>
+                                <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                <a href="#" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card-img">
+                                <img src="https://cdn.worldota.net/t/640x400/content/cb/22/cb2207609c43ccf76cb2fcfab9d15a4fee97a750.jpeg" alt="" style="height: 500px;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Hiking on Koh Tao: 12 Epic Jungle & Beach Trails</h5>
+                                <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                <a href="#" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card-img">
+                                <img src="https://wallpapers.com/images/hd/ocean-background-7qas1h59fni0b3ms.jpg" alt="" style="height: 500px;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">How to Hike to Fraggle Rock on Koh Tao</h5>
+                                <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                <a href="#" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="m-0 p-0">
+                        <div class="container mt-4">
+                            <div class="row g-4 g-mb-3">
+                                <div class="col-12">
+                                    <h2 class="text-center mt-10 ">Royal Palace Tours</h2>
+                                    <p class="text-center">Befitting the home of Cambodia’s royalty, the glittering golden roofline of this palace dominates Phnom Penh’s skyline.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="cade-img relative max-w-full" data-aos="fade-up" data-aos-duration="3000">
+                            <img alt="" class="w-full h-auto object-cover" src="https://i0.wp.com/www.cambodialifestyle.com/wp-content/uploads/2024/02/Royal-Palace.jpg">
+                        </div>
+                    </section>
+                    <section class="mt-15">
+                        <div class="container">
+                            <div class="row g-4 g-mb-3">
+                                <h1 class="text-center">Latest Offers</h1>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                        <div class="card-img">
+                                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgnIpAXs7LuNnD7fVvjA4L3KuwVTVvq67bupLGrma3C_z_s8IJ" alt="" style="height: 200px;">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mt-2">Top 25 Hotels in the World</h5>
+                                            <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                        <div class="card-img">
+                                            <img src="https://images.unsplash.com/photo-1523430410476-0185cb1f6ff9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80" alt="" style="height: 200px;">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mt-2">Top 25 Hotels in the World</h5>
+                                            <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                        <div class="card-img">
+                                            <img src="https://media.licdn.com/dms/image/v2/C511BAQGIdZ0Vjf6Xqg/company-background_10000/company-background_10000/0/1584363571821/camtourguide_cover?e=2147483647&v=beta&t=JfpYYQvwG0BaTGNdVyZVS_LkaWr5-fACY-e5fCiBL8o" alt="" style="height: 200px;">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mt-2">Top 25 Hotels in the World</h5>
+                                            <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                        <div class="card-img">
+                                            <img src="https://www.hotelgiftcard.com/sites/default/files/2024-12/bb10_2.webp" alt="" style="height: 200px;">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mt-2">Top 25 Hotels in the World</h5>
+                                            <p class="card-text">From the Maldives to Mexico, these are the best hotels in the world, according to travelers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="col-12 mt-15">
+                        <h2 class="text-center">Explore More</h2>
+                        <p class="text-center">Discover more amazing places and experiences around the world.</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-img" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                                    <img src="https://www.hotelgiftcard.com/sites/default/files/2024-12/bb10_2.webp" alt="" style="height: 400px;">
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="card-body text-center justify-content-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                                    <h5 class="card-title">Hotels in the World</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi autem impedit doloribus? Placeat quasi et enim mollitia autem blanditiis amet consequuntur illum, voluptatibus eveniet unde quas nisi quidem in!</p>
+                                    <a href="#" class="btn btn-outline-warning">View More</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+        <!-- ================================= -->
+        <!-- banner -->
         <section>
-            <div class="herobanner">
-                <div class="hreo-img">
-                     <div class="hero-text" style="align-items: center;">
-                         <h2 class="text-center text-light">Discover Your Next Adventure</h2>
-                         <p class="text-center text-light">Join us for unforgettable journeys and experiences.
-                        </p>
+            <div class="banner">
+                <div class="row g-4 g-mb-3 text-center justify-content-center">
+                    <div class="col-3 mt-15">
+                        <div class="card-img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <img src="https://withlocals-com-res.cloudinary.com/image/upload/w_286,h_286,c_fill,g_faces,q_auto,dpr_3.0,f_auto/d5648e1c84731dfdcfbb005b50c03a28" alt="" style="height: 300px;">
+                        </div>
+                        <h5 class="card-title text-light mt-2">Explore the World</h5>
+                    </div>
+                    <div class="col-3 mt-15">
+                        <div class="card-img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <img src="https://static.ips-cambodia.com/wp-content/uploads/2023/01/Edited_75.jpg" alt="" style="height: 300px;">
+                        </div>
+                        <h5 class="card-title text-light mt-2">Explore the World</h5>
+                    </div>
+                    <div class="col-3 mt-15">
+                        <div class="card-img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/5f/5e/5f.jpg" alt="" style="height: 300px;">
+                        </div>
+                        <h5 class="card-title text-light mt-2">Explore the World</h5>
                     </div>
                 </div>
             </div>
@@ -101,10 +295,23 @@
         <section>
             <div class="container">
                 <div class="row g-sm-3 g-md-4">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-12">
                         <div class="card">
-                            <div class="card-img">
-                                <img src="assets/images/1.jpg" class="card-img-top" alt="...">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="https://t3.ftcdn.net/jpg/12/89/51/52/360_F_1289515210_lrf3TJIBzkebJYe5cPxVmShMUz6WZIjy.jpg" alt="" style="height: 300px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Discover the Best of Travel</h5>
+                                        <p class="card-text">Join us as we explore the most beautiful destinations, luxurious hotels, and unforgettable experiences around the globe. From serene beaches to bustling cities, we have something for every traveler.</p>
+                                        <a href="#" class="btn btn-outline-warning">Learn More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -112,7 +319,124 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3 class="footer-title fw-bold">
+                        Geeks
+                    </h3>
+                    <p class="footer-text">
+                        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text."
+                    </p>
+                    <i class="bi bi-facebook text-purple"></i>
+                    <i class="bi bi-twitter text-purple ps-1"></i>
+                    <i class="bi bi-github text-purple ps-1"></i>
+                </div>
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-2">
+                    <ul class="navbar-nav">
+                        <h5 class="nav-title fw-bold">Company</h5>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2">
+                    <ul class="navbar-nav">
+                        <h5 class="nav-title fw-bold">Support</h5>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Help and Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Becoming an Instructor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Get the app</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">FAQ’s</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Tutorial</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <ul class="navbar-nav">
+                        <h5 class="nav-title fw-bold">Get in touch</h5>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">339 McDermott Points Apt. 421, San Francisco,
+                                CA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Email: <span
+                                    class="text-primary">support@geeksui.com</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Phone: <span class="fw-bold">(123) 456
+                                    7890</span></a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="nav-item"><img src="assets/image/app1.png" class="img-fluid img-app"
+                                    alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-7 col-xl-9 footer-copyright d-flex justify-content-between">
+                    <div class="span-info text-center">
+                        <span class="footer-span text-secondary">&copy; 2025 Geeks UI</span>
+                        <span class="footer-span ps-4 text-secondary">Privacy Policy</span>
+                        <span class="footer-span ps-4 text-secondary">Cookie Notice</span>
+                        <span class="footer-span ps-4 text-secondary">Do Not Sell My Personal Information</span>
+                        <span class="footer-span ps-4 text-secondary">Terms of Service</span>
+                    </div>
+                </div>
+                <div class="col-5 col-xl-3 text-end">
+                    <span class="lang">
+                        <i class="bi bi-globe pe-2"></i> Language <i class="bi bi-chevron-down ps-2"></i>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+<!-- ------------------------------------------- update footer section ------------------------------------------- -->=
+        <section class="bg-dark text-light py-4 mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2025 Tour Trip. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </footer>
 </body>
 <script src="assets/bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
